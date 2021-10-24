@@ -1,3 +1,8 @@
+game:GetService("StarterGui"):SetCore("SendNotification", {
+		    Title = "Ice made dis";
+		    Text = "Only true vamps can use";
+			})
+
 game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
 
 if (string.lower(msg) == "/e re") then
@@ -202,7 +207,3 @@ end)
 print("")
 print(string.upper(NoclipKey).." Key - Toggle noclip")
 print("")
-game:GetService("StarterGui"):SetCore("SendNotification", {
-		    Title = "Only real vamps";
-		    Text = "Ice made dis";
-			})
