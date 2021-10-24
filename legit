@@ -194,6 +194,6 @@ print("")
 print(string.upper(NoclipKey).." Key - Toggle noclip")
 print("")
 game:GetService("StarterGui"):SetCore("SendNotification", {
-		    Title = "";
+		    Title = "zzz";
 		    Text = "Ice made dis";
 			})
