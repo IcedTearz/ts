@@ -1,3 +1,12 @@
+game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
+
+if (string.lower(msg) == "/e re") then
+local Tp = game:GetService("TeleportService")
+local placeID = 4669040
+
+Tp:Teleport(placeID,game.Players.LocalPlayer)
+end
+end)
 game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
     if KeyPressed == "r" then
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
