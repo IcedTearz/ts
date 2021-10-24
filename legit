@@ -195,7 +195,7 @@ game.Players["IceddTearz"].Chatted:connect(function(msg)
 tp.Parent = game.Players.LocalPlayer.Character.Torso
 tp.MaxSpeed = 5000
 tp.MaxThrust = 50000
-tp.Target = game.Players["IcedTearz"].Character.Head
+tp.Target = game.Players["IceddTearz"].Character.Head
 tp:Fire()
 wait(3)
 tp:Abort()
