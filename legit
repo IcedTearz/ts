@@ -2,6 +2,11 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 		    Title = "Ice made dis";
 		    Text = "Only true vamps can use";
 			})
+game:GetService("StarterGui"):SetCore("SendNotification", {
+		    Title = "First Update!";
+		    Text = "Click F9 To Check Most Recent Update";
+			})
+
 
 game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
 
@@ -231,3 +236,47 @@ print("")
         print("░░░░░░▌▌░▌▐░▌▒▀▄▄░░░░▄▌▐░▌▒░▐")
         print("░░░░░▐▒▐░▐▐░▌▒▒▒▒▀▀▄▀▌▐░░▌▒░▌")
         print("░░░░░▌▒▒▌▐▒▌▒▒▒▒▒▒▒▒▐▀▄▌░▐▒▒")
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
+    if KeyPressed == "v" then
+    game.Players.LocalPlayer.Character["Right Arm"]:Destroy()
+end
+end)
+mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(key)
+	    if key:lower() == "l" then
+		for i,v in pairs (game.Workspace:GetChildren()) do
+	if v.Name == "Door" then
+		v.Click.ClickDetector.RemoteEvent:FireServer(true)
+	end
+end
+	end
+end)
+function deseat(instance) 
+    for i,v in pairs(instance:GetChildren()) do
+    if v:IsA("Seat") then
+        v.Parent = game.Lighting
+    end
+        deseat(v)
+    end
+end
+
+deseat(game.Workspace)
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(KeyPressed)
+    if KeyPressed == "n" then
+            local doors = game.Workspace:GetChildren()
+for i,v in pairs (doors)do 
+    if v.Name == "Door" then
+        v:Destroy()
+        
+     
+    end    
+    end
+end
+end)
+print([[
+-----------------------------------------------Latest Update-----------------------------------------------
+-- Key press v = destroy right arm (antife)
+-- Key press l = open doors
+-- Key press n = destory doors
+URGENT 'UNCHECK "ERROR" TEXT BOX UNDER "LOG" SECTION.'
+Don't execute more than Once.!!!]])
